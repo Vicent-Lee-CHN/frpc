@@ -7,6 +7,7 @@
 > *docker image support for X86 and ARM*
 
 ## 更新
+- **2025-01-27** 更新国内镜像方便使用
 - **2024-03-03** 更新到新版本,支持 toml 配置文件.
 - **2021-05-31** 更新国内镜像方便使用
 - **2021-05-31** 目前 X86 群晖 DMS 7.0 可直接使用 Linux 版本脚本,已实测.由于没有 ARM 版可尝试,请自行尝试.
@@ -34,9 +35,9 @@
 
 安装
 ```shell
-wget https://raw.githubusercontent.com/stilleshan/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
+wget https://raw.githubusercontent.com/Vicent-Lee-CHN/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
 # 以下为国内镜像
-wget https://ghp.ci/https://raw.githubusercontent.com/stilleshan/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
+wget https:://ghproxy.1888866.xyz/https://raw.githubusercontent.com/Vicent-Lee-CHN/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
 ```
 
 使用
@@ -49,9 +50,9 @@ sudo systemctl restart frpc
 
 卸载
 ```shell
-wget https://raw.githubusercontent.com/stilleshan/frpc/master/frpc_linux_uninstall.sh && chmod +x frpc_linux_uninstall.sh && ./frpc_linux_uninstall.sh
+wget https://raw.githubusercontent.com/Vicent-Lee-CHN/frpc/master/frpc_linux_uninstall.sh && chmod +x frpc_linux_uninstall.sh && ./frpc_linux_uninstall.sh
 # 以下为国内镜像
-wget https://ghp.ci/https://raw.githubusercontent.com/stilleshan/frpc/master/frpc_linux_uninstall.sh && chmod +x frpc_linux_uninstall.sh && ./frpc_linux_uninstall.sh
+wget https:://ghproxy.1888866.xyz/https://raw.githubusercontent.com/Vicent-Lee-CHN/frpc/master/frpc_linux_uninstall.sh && chmod +x frpc_linux_uninstall.sh && ./frpc_linux_uninstall.sh
 ```
 
 ### 4. Linux 服务器 docker 安装
@@ -59,9 +60,9 @@ wget https://ghp.ci/https://raw.githubusercontent.com/stilleshan/frpc/master/frp
 
 **git clone** 本仓库,并正确配置 **frpc.toml** 文件.
 ```shell
-git clone https://github.com/stilleshan/frpc
+git clone https://github.com/Vicent-Lee-CHN/frpc
 # git clone 本仓库镜像
-git clone https://ghp.ci/https://github.com/stilleshan/frpc
+git clone https:://ghproxy.1888866.xyz/https://github.com/Vicent-Lee-CHN/frpc
 # 国内镜像
 vi /root/frpc/frpc.toml
 # 配置 frpc.toml 文件
@@ -80,13 +81,3 @@ vi /root/frp/frpc.toml
 docker restart frpc
 # 重启 frpc 容器即可生效
 ```
-
-## 链接
-- Blog [www.ioiox.com](https://www.ioiox.com)
-- GitHub [stilleshan/frpc](https://github.com/stilleshan/frpc)
-- Docker Hub [stilleshan/frpc](https://hub.docker.com/r/stilleshan/frpc)
-- Docker [docker.ioiox.com](https://docker.ioiox.com)
-- 原版frp项目 [fatedier/frp](https://github.com/fatedier/frp)
-- [群晖NAS使用Docker安装配置frpc内网穿透教程](https://www.ioiox.com/archives/26.html) 
-- [群晖NAS安装配置免费frp内网穿透教程](https://www.ioiox.com/archives/6.html)
-- [新手入门 - 详解 frp 内网穿透 frpc.toml 配置](https://www.ioiox.com/archives/79.html)

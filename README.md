@@ -7,6 +7,7 @@
 > *docker image support for X86 and ARM*
 
 ## 更新
+- **2025-02-13** 更新国内镜像方便使用
 - **2025-01-27** 更新国内镜像方便使用
 - **2024-03-03** 更新到新版本,支持 toml 配置文件.
 - **2021-05-31** 更新国内镜像方便使用
@@ -37,7 +38,7 @@
 ```shell
 wget https://raw.githubusercontent.com/Vicent-Lee-CHN/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
 # 以下为国内镜像
-wget https:://ghproxy.1888866.xyz/https://raw.githubusercontent.com/Vicent-Lee-CHN/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
+wget https://ghfast.top/https://raw.githubusercontent.com/Vicent-Lee-CHN/frpc/master/frpc_linux_install.sh && chmod +x frpc_linux_install.sh && ./frpc_linux_install.sh
 ```
 
 使用
